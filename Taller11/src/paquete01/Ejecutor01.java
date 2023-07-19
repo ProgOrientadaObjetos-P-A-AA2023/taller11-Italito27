@@ -8,23 +8,23 @@ public class Ejecutor01 {
         ArrayList<Menu> listado = new ArrayList();
         
         // Dos objetos de tipo menú de niños
-        MenuNinos mN1 = new MenuNinos("Niños 01",2,1,1.5);
-        listado.add(mN1);
+        MenuNinos mNino1 = new MenuNinos("Niños 01",2,1,1.5);
+        listado.add(mNino1);
         
-        MenuNinos mN2 = new MenuNinos("Niños 02",3,1,1.5);
-        listado.add(mN2);
+        MenuNinos mNino2 = new MenuNinos("Niños 02",3,1,1.5);
+        listado.add(mNino2);
         
         // Un objeto de tipo menú de económico
-        MenuEconomico mE = new MenuEconomico("Econo 001",4,25);
-        listado.add(mE);
+        MenuEconomico mEco = new MenuEconomico("Econo 001",4,25);
+        listado.add(mEco);
         
         // Un objeto de tipo menú del día
-        MenuDia mD = new MenuDia("Día 001",5,1,1);
-        listado.add(mD);
+        MenuDia mDia = new MenuDia("Día 001",5,1,1);
+        listado.add(mDia);
         
         // Un objeto de tipo menú a la carta
-        MenuCarta mC = new MenuCarta("",6,1.5,2,10);
-        listado.add(mC);
+        MenuCarta mCar = new MenuCarta("Carta 001",6,1.5,2,10);
+        listado.add(mCar);
         
         for (int i = 0; i < listado.size(); i++) {
             listado.get(i).calcularValorMenu();

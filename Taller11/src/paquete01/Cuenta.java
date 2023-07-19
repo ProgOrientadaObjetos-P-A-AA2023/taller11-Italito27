@@ -68,17 +68,22 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        String cadena = String.format("Factura :\nCliente: %s\n", 
-                nombreCliente);
-
-        for (int i = 0; i < menus.size(); i++) {
-            cadena = String.format("%s%s", 
-                    cadena, menus.get(i));
+        String cadena = String.format("FACTURA:\n"
+                + "Cliente: %s\n",nombreCliente);
+        
+        for(int i = 0; i < menus.size(); i++) {
+           cadena = String.format("%s%s",cadena,
+                   menus.get(i)); 
         }
-
-        cadena = String.format("%s\nSubtotal: $%.2f\nIva: %.2f%%\nTotal a Pagar: $%.2f",
-                cadena, subtotal, iva * 100, valorTotal);
-
+        
+        cadena = String.format("%s\nSubtotal: $%.2f\n"
+                + "IVA: %.2f%%\n"
+                + "Total a Pagar: $%.2f",
+                cadena,
+                subtotal,
+                iva,
+                valorTotal);
+        
         return cadena;
     }
 }

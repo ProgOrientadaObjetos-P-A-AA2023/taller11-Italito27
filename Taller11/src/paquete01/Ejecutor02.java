@@ -46,10 +46,10 @@ public class Ejecutor02 {
                 double valorInicial = Double.parseDouble(datos001[i][j+1]);
                 double valorHelado = Double.parseDouble(datos001[i][j+2]);
                 double valorPastel = Double.parseDouble(datos001[i][j+3]);
-                MenuNinos mN = new MenuNinos(nombre,valorInicial,
+                MenuNinos mNino = new MenuNinos(nombre,valorInicial,
                         valorHelado,valorPastel);
                 
-                lista.add(mN);
+                lista.add(mNino);
             }
         }
         
@@ -59,10 +59,10 @@ public class Ejecutor02 {
                 String nombre = datos002[i][j];
                 double valorInicial = Double.parseDouble(datos002[i][j+1]);
                 double descuento = Double.parseDouble(datos002[i][j+2]);
-                MenuEconomico mE = new MenuEconomico(nombre,valorInicial,
+                MenuEconomico mEco = new MenuEconomico(nombre,valorInicial,
                         descuento);
                 
-                lista.add(mE);
+                lista.add(mEco);
             }
         }
         
@@ -73,10 +73,10 @@ public class Ejecutor02 {
                 double valorInicial = Double.parseDouble(datos003[i][j+1]);
                 double valorPostre = Double.parseDouble(datos003[i][j+2]);
                 double valorBebida = Double.parseDouble(datos003[i][j+3]);
-                MenuDia mD = new MenuDia(nombre,valorInicial,
+                MenuDia mDia = new MenuDia(nombre,valorInicial,
                         valorPostre,valorBebida);
                 
-                lista.add(mD);
+                lista.add(mDia);
             }
         }
         
@@ -88,10 +88,10 @@ public class Ejecutor02 {
                 double valorGuarnicion = Double.parseDouble(datos004[i][j+2]);
                 double valorBebida = Double.parseDouble(datos004[i][j+3]);
                 double porcentajeAd = Double.parseDouble(datos004[i][j+4]);
-                MenuCarta mC = new MenuCarta(nombre,valorInicial,
+                MenuCarta mCar = new MenuCarta(nombre,valorInicial,
                         valorGuarnicion,valorBebida,porcentajeAd);
                 
-                lista.add(mC);
+                lista.add(mCar);
             }
         }
         
